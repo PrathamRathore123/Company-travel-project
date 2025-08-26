@@ -1,0 +1,273 @@
+.tour-package-container {
+  display: flex;
+  min-height: 100vh;
+  margin-top: 60px;
+  background: #0a0a0a;
+}
+
+.mobile-mockup {
+
+  position: fixed;
+  left: 50px;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.mobile-frame {
+  width: 360px;
+  height: 580px;
+  background: #000000;
+  border-radius: 35px;
+  padding: 25px;
+  box-shadow: none;
+  border: 2px solid #000000;
+}
+
+.mobile-screen {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mobile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.mobile-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+  color: white;
+  padding: 25px;
+}
+
+.mobile-overlay h3 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mobile-overlay p {
+  margin: 0;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.content-section {
+  margin-left: 450px;
+  padding: 80px 60px;
+  width: calc(100% - 450px);
+  background: #0a0a0a;
+}
+
+.package-card {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 120px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateX(10px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+
+
+.title-section h2 {
+  color: #ffffff;
+  font-size: 48px;
+  margin: 0 0 20px 0;
+  font-weight: 200;
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.price-section {
+  text-align: right;
+  background: transparent;
+  padding: 0;
+  border: none;
+  min-width: 150px;
+}
+
+.price {
+  display: block;
+  font-size: 40px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.duration {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cccccc;
+  margin: 0;
+  font-weight: 400;
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+.card-content {
+  padding: 0;
+}
+
+.highlights {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.highlights h3 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  color: #cccccc;
+  font-weight: 300;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  border-left: 2px solid transparent;
+  padding-left: 0;
+}
+
+.highlight-item:hover {
+  color: #ffffff;
+  border-left-color: rgba(255, 255, 255, 0.3);
+  padding-left: 15px;
+}
+
+.highlight-icon {
+  color: #666666;
+  margin-right: 15px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.card-actions {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.book-now-btn {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 140px;
+}
+
+.details-btn {
+  background: transparent;
+  color: #888888;
+  border: none;
+  border-bottom: 1px solid #333333;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 140px;
+}
+
+.book-now-btn:hover {
+  border-bottom-color: #cccccc;
+  transform: translateY(-1px);
+}
+
+.details-btn:hover {
+  color: #ffffff;
+  border-bottom-color: #666666;
+  transform: translateY(-1px);
+}
+
+.card-number {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 120px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.03);
+  z-index: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .mobile-mockup {
+    display: none;
+  }
+  
+  .content-section {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .package-card {
+    padding: 30px;
+    min-height: auto;
+  }
+  
+  .highlights ul {
+    grid-template-columns: 1fr;
+  }
+}

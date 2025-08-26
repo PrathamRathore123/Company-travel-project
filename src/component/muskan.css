@@ -1,0 +1,170 @@
+body {
+  background-color: #000;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+header nav a {
+  margin: 0 12px;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #ff7d1a;
+}
+
+.trip-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.trip-container.reverse {
+  grid-template-columns: 1fr 2fr;
+}
+
+.page {
+  padding: 20px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+}
+
+.hero-img:hover {
+  transform: rotate(2deg);
+}
+
+.trip-container:nth-child(even) .hero-img:hover {
+  transform: rotate(-2deg);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 16px;
+  color: #fff;
+}
+
+.desc {
+  color: #ccc;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.booking-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+  border: 1px solid #333;
+}
+
+.booking-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.booking-card h3 span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #444;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  background: #222;
+}
+
+.form-input input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  color: #fff;
+}
+
+.booking-btn {
+  width: 100%;
+  margin-top: 16px;
+  background: #ff7d1a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-btn:hover {
+  background: #e66a0c;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.amenities {
+  margin-top: 16px;
+}
+
+.amenities h4 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.amenities ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  color: #ccc;
+  font-size: 14px;
+}
